@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
+import { handleEmailClick } from './send-email'
 
 const projects = [
   {
@@ -350,9 +351,7 @@ function App() {
               </p>
             </div>
             <a
-              href="https://mail.google.com/mail/?view=cm&to=cerepanovila13@gmail.com&su=Привіт!%20Потрібна%20допомога%20з%20проектом"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={handleEmailClick}
               className="group inline-flex items-center gap-3 rounded-full bg-slate-950 px-7 py-3.5 text-center font-semibold text-white shadow-lg transition-all hover:bg-slate-800 hover:shadow-xl"
             >
               <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none">
