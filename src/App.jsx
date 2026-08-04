@@ -176,7 +176,7 @@ function App() {
       <section className="relative z-10 mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.15fr_0.85fr] md:py-28">
         <div>
           <p className="mb-5 inline-flex rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-700 dark:border-cyan-400/30 dark:bg-cyan-400/10 dark:text-cyan-200">
-            Full-Stack Developer • React • TypeScript • Java • Mobile App Developer
+            Full-Stack Developer • React • TypeScript • Java
           </p>
           <h1 className="max-w-3xl text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white md:text-7xl">
             Створюю швидкі, чисті та зручні вебінтерфейси.
