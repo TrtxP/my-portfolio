@@ -6,7 +6,7 @@ const projects = [
     repo: 'web-game',
     description:
       'Браузерна гра з динамічною ареною, де гравець збирає предмети та змагається за рахунок. Повністю на чистому JavaScript.',
-    stack: ['JavaScript', 'CSS', 'HTML', 'Canvas'],
+    stack: ['JavaScript', 'CSS', 'HTML'],
     github: 'https://github.com/TrtxP/web-game',
     stars: 1,
     gradient: 'from-amber-400/40 via-orange-400/30 to-red-400/20',
@@ -68,7 +68,7 @@ const projects = [
       'Приклад використання Socket.IO для зручного написання коду веб-сокетів. Real-time комунікація між клієнтом та сервером з EJS-шаблонами.',
     stack: ['JavaScript', 'Socket.IO', 'EJS', 'Node.js'],
     github: 'https://github.com/TrtxP/Socket-IO',
-    stars: 0,
+    stars: 1,
     gradient: 'from-lime-400/40 via-green-400/30 to-emerald-400/20',
     gradientDark: 'from-lime-500/30 via-green-500/20 to-emerald-500/10',
     icon: '🔌',
@@ -356,7 +356,7 @@ function App() {
               className="group inline-flex items-center gap-3 rounded-full bg-slate-950 px-7 py-3.5 text-center font-semibold text-white shadow-lg transition-all hover:bg-slate-800 hover:shadow-xl"
             >
               <svg className="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none">
-                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="currentColor"/>
+                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z" fill="currentColor" />
               </svg>
               <span>Написати в Gmail</span>
               <svg className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
