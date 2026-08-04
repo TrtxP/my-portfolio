@@ -1,4 +1,4 @@
-import { handleEmailClick } from "../send-email"
+import { handleEmailClick } from "../js/send-email"
 
 export default function ViewProfile() {
     return (

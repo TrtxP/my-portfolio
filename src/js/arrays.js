@@ -1,0 +1,90 @@
+export const projects = [
+    {
+        title: 'Arena Collector',
+        repo: 'web-game',
+        description:
+            'Браузерна гра з динамічною ареною, де гравець збирає предмети та змагається за рахунок. Повністю на чистому JavaScript.',
+        stack: ['JavaScript', 'CSS', 'HTML'],
+        github: 'https://github.com/TrtxP/web-game',
+        stars: 1,
+        gradient: 'from-amber-400/40 via-orange-400/30 to-red-400/20',
+        gradientDark: 'from-amber-500/30 via-orange-500/20 to-red-500/10',
+        icon: '🎮',
+    },
+    {
+        title: 'Match-Me',
+        repo: 'web',
+        description:
+            'Full-stack додаток для знайомств та зустрічей з людьми з усього світу. Java бекенд із TypeScript фронтендом.',
+        stack: ['Java', 'TypeScript', 'Full-Stack'],
+        github: 'https://github.com/TrtxP/web',
+        stars: 0,
+        gradient: 'from-violet-400/40 via-fuchsia-400/30 to-pink-400/20',
+        gradientDark: 'from-violet-500/30 via-fuchsia-500/20 to-pink-500/10',
+        icon: '💬',
+    },
+    {
+        title: 'GraphQL API',
+        repo: 'graphql',
+        description:
+            'Фінальний проект з використанням GraphQL на TypeScript з Apollo Server. Типізований API з запитами та мутаціями.',
+        stack: ['TypeScript', 'GraphQL', 'Apollo Server'],
+        github: 'https://github.com/TrtxP/graphql',
+        stars: 0,
+        gradient: 'from-pink-400/40 via-rose-400/30 to-red-400/20',
+        gradientDark: 'from-pink-500/30 via-rose-500/20 to-red-500/10',
+        icon: '⚡',
+    },
+    {
+        title: 'Frontend Framework',
+        repo: 'frontend-framework',
+        description:
+            'Власний фронтенд-фреймворк, написаний на чистому Vanilla JS. Компонентний підхід, роутинг та реактивний стан.',
+        stack: ['JavaScript', 'CSS', 'Architecture'],
+        github: 'https://github.com/TrtxP/frontend-framework',
+        stars: 0,
+        gradient: 'from-emerald-400/40 via-teal-400/30 to-cyan-400/20',
+        gradientDark: 'from-emerald-500/30 via-teal-500/20 to-cyan-500/10',
+        icon: '🧩',
+    },
+    {
+        title: 'Backend Kurswork',
+        repo: 'backend-kurswork',
+        description:
+            'Курсова робота з бекенд-розробки. Серверна частина на TypeScript та PHP із динамічним фронтендом.',
+        stack: ['TypeScript', 'PHP', 'CSS', 'HTML'],
+        github: 'https://github.com/TrtxP/backend-kurswork',
+        stars: 0,
+        gradient: 'from-sky-400/40 via-blue-400/30 to-indigo-400/20',
+        gradientDark: 'from-sky-500/30 via-blue-500/20 to-indigo-500/10',
+        icon: '🛠️',
+    },
+    {
+        title: 'Socket-IO',
+        repo: 'Socket-IO',
+        description:
+            'Приклад використання Socket.IO для зручного написання коду веб-сокетів. Real-time комунікація між клієнтом та сервером з EJS-шаблонами.',
+        stack: ['JavaScript', 'Socket.IO', 'EJS', 'Node.js'],
+        github: 'https://github.com/TrtxP/Socket-IO',
+        stars: 1,
+        gradient: 'from-lime-400/40 via-green-400/30 to-emerald-400/20',
+        gradientDark: 'from-lime-500/30 via-green-500/20 to-emerald-500/10',
+        icon: '🔌',
+    },
+]
+
+export const skills = [
+    { name: 'JavaScript', icon: '⚡' },
+    { name: 'TypeScript', icon: '🔷' },
+    { name: 'React', icon: '⚛️' },
+    { name: 'Java', icon: '☕' },
+    { name: 'GraphQL', icon: '◈' },
+    { name: 'PHP', icon: '🐘' },
+    { name: 'Tailwind CSS', icon: '🎨' },
+    { name: 'Vite', icon: '⚡' },
+    { name: 'Apollo Server', icon: '🚀' },
+    { name: 'Git', icon: '🔀' },
+    { name: 'Full-Stack', icon: '🏗️' },
+    { name: 'REST API', icon: '🔌' },
+    { name: 'Socket.IO', icon: '📡' },
+]
