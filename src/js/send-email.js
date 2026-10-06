@@ -7,7 +7,7 @@ export const handleEmailClick = (e) => {
     const email = "cerepanovila13@gmail.com"
 
     if (isMobile) {
-        window.location.href = `mailto: ${email}?subject=${subject}`
+        window.location.href = `mailto:${email}?subject=${subject}`
     } else {
         window.open(`https://mail.google.com/mail/?view=cm&to=${email}&su=${subject}`, '_blank')
     }
