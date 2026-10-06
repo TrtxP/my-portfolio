@@ -3,6 +3,7 @@ import ToggleThemes from "./ToggleThemes"
 const links = [
     { href: '#projects', label: 'Проєкти' },
     { href: '#skills', label: 'Навички' },
+    { href: '#achievements', label: 'Досягнення' },
     { href: '#contacts', label: 'Контакти' },
 ]
 

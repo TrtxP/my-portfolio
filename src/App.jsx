@@ -2,6 +2,7 @@ import ViewHeader from './components/ViewHeader'
 import ViewMainSection from './components/ViewMainSection'
 import ViewProjectsSection from './components/ViewProjectsSection'
 import ViewSkillsSection from './components/ViewSkillsSection'
+import ViewAchievementsSection from './components/ViewAchievementsSection'
 import ViewProfile from './components/ViewProfile'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <ViewMainSection />
         <ViewProjectsSection />
         <ViewSkillsSection />
+        <ViewAchievementsSection />
         <ViewProfile />
       </main>
     </div>
