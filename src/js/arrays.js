@@ -1,5 +1,14 @@
 export const projects = [
     {
+        title: 'Web Messenger',
+        repo: 'web-messenger',
+        description:
+            'Захищений месенджер на Flutter Web і NestJS: особисті та групові чати, пошук по повідомленнях, опитування, шифрування AES-256-GCM. Єдина кодова база і база даних з мобільною версією.',
+        stack: ['Flutter', 'Dart', 'NestJS', 'PostgreSQL', 'Socket.IO', 'Docker'],
+        github: 'https://github.com/TrtxP/web-messenger',
+        stars: 0,
+    },
+    {
         title: 'Arena Collector',
         repo: 'web-game',
         description:
@@ -60,6 +69,10 @@ export const skills = [
     'TypeScript',
     'React',
     'Java',
+    'Flutter',
+    'Dart',
+    'NestJS',
+    'Мобільна розробка',
     'GraphQL',
     'PHP',
     'Tailwind CSS',
