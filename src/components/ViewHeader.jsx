@@ -11,11 +11,10 @@ export default function ViewHeader() {
     return (
         <header className="sticky top-0 z-20 border-b border-hair bg-paper">
             <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-x-6 gap-y-1 px-5 py-4 text-[13px] md:px-10">
-                <a href="#top" className="whitespace-nowrap font-bold hover:underline">
-                    <span className="sm:hidden">І. Ч.</span>
-                    <span className="hidden sm:inline">І. Черепанов</span>
+                <a href="#top" className="hidden whitespace-nowrap font-bold hover:underline sm:block">
+                    І. Черепанов
                 </a>
-                <nav className="flex items-center gap-x-4 md:gap-x-8" aria-label="Навігація">
+                <nav className="flex w-full items-center justify-between gap-x-3 text-[12px] sm:w-auto sm:justify-start sm:gap-x-5 sm:text-[13px] md:gap-x-8" aria-label="Навігація">
                     {links.map((link) => (
                         <a key={link.href} href={link.href} className="hover:underline underline-offset-4">
                             {link.label}

@@ -1,64 +1,53 @@
-# Portfolio of Ilya TrtxP
+# Портфоліо Іллі Черепанова
 
-A clean, minimalist single‑page portfolio built with **React**, **Vite**, and **Tailwind CSS**. It showcases a selection of my open‑source projects fetched directly from my GitHub profile.
+Односторінкове портфоліо у стилі чоловічого мінімалізму: світла «паперова» тема, чорний текст, монохромна темна тема.
+Живий сайт: https://ilya-dev.vercel.app
 
----
+## Стек
 
-## ✨ Features
+React 19, Vite 8, Tailwind CSS 4. Шрифти Oswald (заголовки) та JetBrains Mono (текст) вбудовані через `@fontsource`, зовнішніх запитів до CDN немає.
 
-- **Dynamic project list** – project information (title, description, stack, stars, repo link) is loaded from my GitHub repositories.
-- **Responsive design** – fluid grid that works on mobile, tablet and desktop.
-- **Dark / light mode friendly** – uses Tailwind’s color‑mode utilities.
-- **Smooth micro‑animations** – hover effects, button transitions and subtle entrance animations.
-- **Contact button** – opens a pre‑filled Gmail compose window.
+## Структура
 
----
-
-## 🛠️ Tech Stack
-
-| Category | Technologies |
-|----------|---------------|
-| Front‑end | React, Vite, Tailwind CSS |
-| Icons & UI | Heroicons, SVG, CSS gradients |
-| Data fetching | GitHub REST API (client‑side) |
-| Deployment | Vercel / Netlify (static) |
-
----
-
-## 📂 Projects
-
-| Project | Description | Stack | GitHub |
-|---------|-------------|-------|--------|
-| **Arena Collector** | Browser game with a dynamic arena where the player collects items. | JavaScript, CSS, HTML, Canvas | [github.com/TrtxP/web-game](https://github.com/TrtxP/web-game) |
-| **Match‑Me** | Full‑stack dating app with Java backend and TypeScript frontend. | Java, TypeScript, Full‑Stack | [github.com/TrtxP/web](https://github.com/TrtxP/web) |
-| **GraphQL API** | Typed GraphQL API built with Apollo Server on TypeScript. | TypeScript, GraphQL, Apollo Server | [github.com/TrtxP/graphql](https://github.com/TrtxP/graphql) |
-| **Frontend Framework** | My own lightweight vanilla‑JS framework (routing, reactive state, component model). | JavaScript, CSS, Architecture | [github.com/TrtxP/frontend-framework](https://github.com/TrtxP/frontend-framework) |
-| **Backend Kurswork** | Backend coursework using TypeScript and PHP with a dynamic front‑end. | TypeScript, PHP, CSS, HTML | [github.com/TrtxP/backend-kurswork](https://github.com/TrtxP/backend-kurswork) |
-| **Socket‑IO** | Example of real‑time communication with Socket.IO and EJS templates. | JavaScript, Socket.IO, EJS, Node.js | [github.com/TrtxP/Socket-IO](https://github.com/TrtxP/Socket-IO) |
-
----
-
-## 🚀 Getting Started
-
-```bash
-# clone the repository
-git clone https://github.com/TrtxP/portfolio.git
-cd portfolio
-
-# install dependencies
-npm install
-
-# run development server
-npm run dev
+```
+src/
+  App.jsx                  збирає сторінку; hash-маршрут #/documents/<id> для перегляду документів
+  components/
+    ViewHeader.jsx         шапка й навігація
+    ViewMainSection.jsx    hero
+    ViewProjectsSection.jsx  3 повні блоки + компактний список інших проєктів
+    ViewSkillsSection.jsx  навички
+    ViewAchievementsSection.jsx  години за модулями, сертифікат і документи з прев'ю
+    ViewDocument.jsx       повний перегляд документа (сторінки PDF як зображення)
+    ViewProfile.jsx        контакти
+    ToggleThemes.jsx       світла/темна тема (зберігається в localStorage)
+  js/arrays.js             дані: проєкти, навички, модулі, документи
+  js/send-email.js         відкриття Gmail або mailto
+public/
+  docs/                    PDF документів і їхні зображення (webp)
+  favicon.svg, robots.txt, sitemap.xml
 ```
 
-The app will be available at `http://localhost:5173`.
+## Запуск
 
----
+```bash
+npm install
+npm run dev      # розробка
+npm run build    # збірка в dist/
+npm run preview  # перегляд збірки
+```
 
-## 📫 Contact
+## Як змінити вміст
 
-- **Email:** [cerepanovila13@gmail.com](mailto:cerepanovila13@gmail.com) – the "Write in Gmail" button on the site opens a pre‑filled compose window.
-- **GitHub:** [github.com/TrtxP](https://github.com/TrtxP)
+- **Проєкти:** `src/js/arrays.js`, масив `projects`. Поле `featured: true` робить проєкт повним блоком на екран, решта потрапляє в компактний список.
+- **Навички:** масив `skills` в тому ж файлі.
+- **Документи:** покласти PDF у `public/docs/`, зробити зображення сторінок (наприклад, `pdftoppm -png -r 220`), перетворити на webp і додати запис у `documents`.
+- **Контакти:** `src/components/ViewProfile.jsx`.
 
----
+## Приватність документів
+
+У PDF у `public/docs/` дата народження замальована (текст видалено, а не лише прикрито). Перш ніж замінювати документи, перевірте оригінали на персональні дані.
+
+## Деплой
+
+Статичний сайт: підключений до Vercel, кожен `git push` у головну гілку запускає новий деплой.

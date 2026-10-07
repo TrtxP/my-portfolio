@@ -17,7 +17,7 @@ export default function ViewMainSection() {
                 className="reveal mt-10 grid gap-6 border-t border-rule pt-5 md:grid-cols-12 md:gap-10"
                 style={{ '--d': '360ms' }}
             >
-                <p className="font-bold md:col-span-4">Full-stack розробник</p>
+                <p className="font-bold md:col-span-4">Full-stack розробник · Flutter</p>
                 <p className="text-mute md:col-span-6">
                     Вивчаю розробку програмного забезпечення.
                     <br />

@@ -1,4 +1,8 @@
 {
+  "name": "ilya-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Портфоліо Іллі Черепанова: full-stack розробник · Flutter",
   "type": "module",
   "scripts": {
     "dev": "vite",
